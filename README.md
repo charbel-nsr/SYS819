@@ -29,6 +29,23 @@ Contains scripts, data, and models trained using datasets with turbine logs.
 5. **Model Files**:
    - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
    - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
+---
+
+### `without logs`
+Contains scripts, data, and models trained using datasets without turbine logs.
+
+#### Files:
+1. **`AE-without logs.ipynb`**: 
+   - Jupyter notebook implementing the autoencoder models using data without logs.
+2. **`Data Collection and Preprocessing without logs.ipynb`**:
+   - Notebook for preprocessing datasets without turbine logs.
+3. **`Dataset Splitting without logs.ipynb`**:
+   - Notebook for splitting datasets into training, validation, and testing subsets without logs.
+   - Isolation forest
+4. **Model Files**:
+   - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
+   - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
+
 
 ---
 
@@ -49,25 +66,6 @@ The datasets used in this project were sourced from the EDP Open Data platform. 
 8. **[Wind Turbine SCADA Signals 2016](https://www.edp.com/en/innovation/open-data/wind-turbine-scada-signals-2016)** → Rename to `Wind-Turbine-SCADA-signals.xlsx`
 
 **Note**: they must be combined, renamed, duplicated and then placed in both the `with logs` and `without logs` directories.
-
----
-
-### `without logs`
-Contains scripts, data, and models trained using datasets without turbine logs.
-
-#### Files:
-1. **`AE-without logs.ipynb`**: 
-   - Jupyter notebook implementing the autoencoder models using data without logs.
-2. **`Data Collection and Preprocessing without logs.ipynb`**:
-   - Notebook for preprocessing datasets without turbine logs.
-3. **`Dataset Splitting without logs.ipynb`**:
-   - Notebook for splitting datasets into training, validation, and testing subsets without logs.
-   - Isolation forest
-4. **Model Files**:
-   - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
-   - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
-
-
 ---
 ### Produced CSV Files
 The processed CSV files (`final_data.csv`, `train_data.csv`, `val_data.csv`, `test_data.csv`, etc.) generated during the preprocessing steps are also **not included** in this repository due to their large size. You will need to generate these CSV files yourself by first running the preprocessing scripts available in the respective directories (`Data Collection and Preprocessing with logs.ipynb` and `Data Collection and Preprocessing without logs.ipynb` then `Dataset Splitting with logs.ipynb` and `Dataset Splitting without logs.ipynb.ipynb`).
