@@ -29,15 +29,7 @@ Contains scripts, data, and models trained using datasets with turbine logs.
 5. **Model Files**:
    - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
    - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
-6. **Data Files**:
-   - `final_data.csv`: Final processed dataset.
-   - `train_data.csv`, `train_data_IF.csv`: Training datasets (manual and Isolation Forest-filtered).
-   - `val_data.csv`: Validation dataset.
-   - `test_data.csv`: Test dataset.
-7. **Other Files**:
-   - `Historical-Failure-Logbook.xlsx`, `Onsite-MetMast-SCADA-data.xlsx`: Source data for logs and SCADA signals.
-   - `scaler.pkl`: Scaler used for data normalization.
-   - `reconstruction_thresholds.pkl`: Threshold values for reconstruction error classification.
+
 
 ---
 
@@ -55,15 +47,7 @@ Contains scripts, data, and models trained using datasets without turbine logs.
 4. **Model Files**:
    - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
    - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
-5. **Data Files**:
-   - `final_data.csv`: Final processed dataset.
-   - `train_data.csv`, `train_data_IF.csv`: Training datasets (manual and Isolation Forest-filtered).
-   - `val_data.csv`: Validation dataset.
-   - `test_data.csv`: Test dataset.
-6. **Other Files**:
-   - `Historical-Failure-Logbook.xlsx`, `Onsite-MetMast-SCADA-data.xlsx`: Source data for SCADA signals.
-   - `scaler.pkl`: Scaler used for data normalization.
-   - `reconstruction_thresholds.pkl`: Threshold values for reconstruction error classification.
+
 
 ---
 
