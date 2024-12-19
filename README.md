@@ -30,6 +30,25 @@ Contains scripts, data, and models trained using datasets with turbine logs.
    - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
    - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
 
+---
+
+## Required Datasets
+### Excel Files
+The datasets used in this project were sourced from the EDP Open Data platform. Due to their size, these files are not included in this repository. **You must download the following files from EDP and place them in the appropriate directories (`with logs` and `without logs`):**
+
+#### 2017:
+1. **[Historical Failure Logbook 2017](https://www.edp.com/en/innovation/open-data/historical-failure-logbook-2017)** → Rename to `Historical-Failure-Logbook.xlsx`
+2. **[Wind Farm Logs 2017](https://www.edp.com/en/innovation/open-data/wind-farm-logs-2017)** → Rename to `Wind-Turbines-Logs.xlsx`
+3. **[Onsite Met Mast SCADA 2017](https://www.edp.com/en/innovation/open-data/onsite-metmast-scada-2017)** → Rename to `Onsite-MetMast-SCADA-data.xlsx`
+4. **[Wind Turbine SCADA Signals 2017](https://www.edp.com/en/innovation/open-data/wind-turbine-scada-signals-2017)** → Rename to `Wind-Turbine-SCADA-signals.xlsx`
+
+#### 2016:
+5. **[Historical Failure Logbook 2016](https://www.edp.com/en/innovation/open-data/historical-failure-logbook-2016)** → Rename to `Historical-Failure-Logbook.xlsx`
+6. **[Wind Turbine Logs 2016](https://www.edp.com/en/innovation/open-data/wind-turbine-logs-2016)** → Rename to `Wind-Turbines-Logs.xlsx`
+7. **[Onsite Met Mast SCADA 2016](https://www.edp.com/en/innovation/open-data/onsite-metmast-scada-2016)** → Rename to `Onsite-MetMast-SCADA-data.xlsx`
+8. **[Wind Turbine SCADA Signals 2016](https://www.edp.com/en/innovation/open-data/wind-turbine-scada-signals-2016)** → Rename to `Wind-Turbine-SCADA-signals.xlsx`
+
+**Note**: they must be combined, renamed, duplicated and then placed in both the `with logs` and `without logs` directories.
 
 ---
 
@@ -48,6 +67,17 @@ Contains scripts, data, and models trained using datasets without turbine logs.
    - `autoencoder_IF_model.pth`: Trained Isolation Forest autoencoder.
    - `autoencoder_manual_model.pth`: Trained manual filtering autoencoder.
 
+
+---
+### Produced CSV Files
+The processed CSV files (`final_data.csv`, `train_data.csv`, `val_data.csv`, `test_data.csv`, etc.) generated during the preprocessing steps are also **not included** in this repository due to their large size. You will need to generate these CSV files yourself by first running the preprocessing scripts available in the respective directories (`Data Collection and Preprocessing with logs.ipynb` and `Data Collection and Preprocessing without logs.ipynb` then `Dataset Splitting with logs.ipynb` and `Dataset Splitting without logs.ipynb.ipynb`).
+
+---
+
+### Important Note
+To execute the project successfully, ensure that:
+1. All required Excel files are downloaded, renamed, and placed in the correct directories.
+2. Run the preprocessing scripts to generate the necessary CSV files before training or evaluating the models.
 
 ---
 
